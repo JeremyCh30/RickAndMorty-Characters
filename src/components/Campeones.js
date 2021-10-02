@@ -17,7 +17,7 @@ const Campeones = () => {
         console.log(resultado);
 
         setCampeon({
-            nombre: resultado.data.data
+            nombre: resultado.data.type
         });
     }
 
