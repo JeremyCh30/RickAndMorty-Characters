@@ -1,0 +1,14 @@
+import React from 'react';
+const Navbar = ({brand}) => {
+    return (  
+        <nav>
+            <div>
+                <a>
+                    {brand}
+                </a>
+            </div>
+        </nav>
+    );
+};
+ 
+export default Navbar;

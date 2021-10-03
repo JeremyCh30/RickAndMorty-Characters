@@ -1,36 +1,25 @@
 import React, { useState }  from 'react'
 import axios from 'axios';
 
-const Personajes = () => {
-    
-    
-    
-    const [personaje, setPersonaje] = useState({
-        nombre: ''
-    });
-
-    // Destructuring al state pokemon
-    const { nombre } = personaje;
-
-    const buscarPersonaje = async () => {
-        const url = `https://rickandmortyapi.com/api/character`;
-
-        const resultado = await axios.get(url);
-        console.log(resultado);
-
-        setPersonaje({
-            nombre: resultado.data.results[0].name
-        });
-    }
-
+const Personajes = ({personaje}) => {
     return ( 
         <div>
-            <p>{nombre}</p>
-            <button onClick={() => buscarPersonaje()}>Llamar</button>
-        </div>
-        
-           
-        
+            <div>
+                {personaje.map((item, index) => (
+                    <div> key={index}
+                        <div>
+                          <img src={item.image}/>
+                           <div>
+                              <h5>{item.name}</h5>
+                              <hr />
+                              <p>Species: {item.species}</p>
+                              <p>Location: {item.location.name}</p>
+                            </div>
+                         </div>
+                    </div>
+                ))}
+                </div>
+            </div>
      );
 }
  
