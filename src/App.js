@@ -1,5 +1,5 @@
 import React from 'react'
-import Campeones from './components/Campeones';
+import Personajes from './components/Personajes';
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     
     <div>
       <p>Inicio de proyecto</p>
-      <Campeones/>
+      <Personajes/>
     </div>
     
     
