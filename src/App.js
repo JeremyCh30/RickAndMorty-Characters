@@ -2,12 +2,14 @@ import React from 'react'
 import Personajes from './components/Personajes';
 
 
-function App() {
+function App(personajes) {
+
+
   return (
-    
+
+
     <div>
-      <p>Inicio de proyecto</p>
-      <Personajes/>
+      <Personajes personajes={personajes}/>
     </div>
     
     
