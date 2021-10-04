@@ -41,25 +41,26 @@ const App = () => {
 <>
     <Personajes personaje={personaje} />
 
-    <div>
-      <nav>
-        <ul>
-          {info.prev? (
-          <li>
-            <button onClick={prevPage}>
-              Anterior
-            </button>
-            </li>
-            ) : null? (
-              <li>
-                <button onClick={nextPage}>
-                  Siguiente
+    <div className="container pb-5">
+        <nav>
+        <ul className="pagination justify-content-center">
+          {info.next ? (
+              <li className="page-item">
+                <button className="page-link1" onClick={nextPage}>
+                  Next
                 </button>
               </li>
             ) : null}
-        </ul>
-      </nav>
-    </div>
+            {info.prev ? (
+              <li className="page-item">
+                <button className="page-link2" onClick={prevPage}>
+                  Previous
+                </button>
+              </li>
+            ) : null}
+          </ul>
+        </nav>
+      </div>
     </>
    );
 }
