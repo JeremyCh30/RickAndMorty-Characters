@@ -1,0 +1,183 @@
+body{
+    background: #081119;
+    background-image: url(./background.gif);
+    
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+background: #000000;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+  background: #00ff97;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #00ff97;
+  box-shadow: 0 0 4px 2px rgb(100, 223, 0);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+  background-color: #00afc7;
+}
+body::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+.container{
+    /*primero*/
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width:576px){
+    .container{max-width: 540px}
+  }
+  @media (min-width:768px){
+    .container{max-width: 720px}
+  }
+  @media (min-width:992px){
+    .container{max-width: 960px}
+  }
+  .row{
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y:0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-lg-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width:25%;
+  }
+  .mb-4{
+    margin-bottom: 1.5rem;
+  }
+  .card{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border:1px solid rgba (0,0,0,.125);
+    border-radius: .25rem;
+  }
+  .car-body{
+    display: table-column;
+    justify-content: center;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    display: table-column;
+  justify-content: center;
+  margin: 0 auto;
+    
+  }
+  img.logo{
+    width: 70%;
+    margin-left: 15%;
+  }
+  img {
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    display:block;
+    margin:auto;
+  }
+  h1 {
+    color: #00ff97;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background: #00ff97;
+    border-radius: 0.8rem;
+    margin: 1rem;
+  }
+  h4 {
+    margin: 1rem;
+    color: #ffffff;
+    background: #8b8b8b;
+    border-radius: 0.4rem;
+    font-weight: inherit;
+    padding: 0.2rem;
+  }
+  input{
+    text-align: center;
+    background: #002128;
+    outline: none;
+    border: 0;
+    width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 1rem;
+  }
+  @media screen and (max-width: 918px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  }
+  @media screen and (max-width: 540px) {
+  .container {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+}
+button:hover{
+  box-shadow: inset 0 0 0.5em 0 hsla(98, 100%, 50%, 0), 0 0 0.5em 0 hsl(98, 100%, 50%);
+}
+.page-link1 {
+    border-radius: 8px;
+    border-color:#00ff97 ;
+    font-size: 18px; 
+    background-color: #00ff97;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 15%;
+    float: right;
+    overflow:auto;
+    border: 3px solid #65fd00d0; /* Green */
+  }
+  .page-link2{
+    border-radius: 8px;
+    border-color:#00ff97 ;
+    font-size: 18px; 
+    background-color: #00ff97;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 15%;
+    float: left;
+    overflow:auto;
+  }
+ 

@@ -1,19 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//Components
+import Inicio from './components/Inicio';
 import Personajes from './components/Personajes';
 
+const App = () => {
+  
+  
+  return ( 
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Inicio}/>
+        <Route exact path="/personajes" component={Personajes}/>
+      </Switch>
 
-function App(personajes) {
-
-
-  return (
-
-
-    <div>
-      <Personajes personajes={personajes}/>
-    </div>
-    
-    
-  );
+    </Router>
+   );
 }
-
+ 
 export default App;
