@@ -11,6 +11,9 @@ const Personajes = () => {
   const[personaje, setPersonaje] = useState([]);
   //State de información
   const[info, setInfo] = useState({});
+  
+
+
   //Link del api de Rick & Morty
   const  url = "https://rickandmortyapi.com/api/character";
 
@@ -48,7 +51,7 @@ const Personajes = () => {
             <Link to={'/'} className="button margen-arriba">
                 Ir a la Página Principal
             </Link>
-        
+
             <CardsPersonajes personaje={personaje} />
     
             <div className="container pb-5">
