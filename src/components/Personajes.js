@@ -29,6 +29,7 @@ const Personajes = () => {
       console.log(error);
     });
   };
+  
   //Función para el cambio de página
   //avanzar
   const nextPage = () => {
