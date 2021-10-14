@@ -118,7 +118,7 @@ body::-webkit-scrollbar {
     font-weight: inherit;
     padding: 0.2rem;
   }
-  input{
+  .input{
     text-align: center;
     background: #002128;
     outline: none;

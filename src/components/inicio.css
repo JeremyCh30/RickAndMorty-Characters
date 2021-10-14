@@ -1,0 +1,24 @@
+.button {
+    width: 10%;
+    background-color: #00ff97 ;
+    border-color: #00ff97;
+    padding: 1px 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 14px;
+    cursor: pointer;
+    text-align: left;
+}
+.contiene{
+    /*primero*/
+    width: 100%;
+    margin-left: auto;
+  }
+  @media (min-width:666px){
+    .contiene{max-width: 640px}
+  }
+  @media (min-width:992px){
+    .contiene{max-width: 960px}
+  }

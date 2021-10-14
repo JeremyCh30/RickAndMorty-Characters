@@ -45,7 +45,7 @@ const Personajes = () => {
     return ( 
         <>
 
-            <Link to={'/'} className="button margen-arriba">
+            <Link to={'/'} className="button margen-arriba input">
                 Ir a la Página Principal
             </Link>
         
