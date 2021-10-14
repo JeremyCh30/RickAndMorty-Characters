@@ -12,11 +12,13 @@ const CardsPersonajes = ({personaje}) => {
                 {personaje.map((item, index) => (
                     <div key={index} className="col-lg-3 col-md-6 col-sm-12 mb-4">
                         <div  className="card" style={{ minWidth: "200px" }}> 
-                          <img src={item.image}/>
+                          <img src={item.image} alt={item.name}/>
                            <div className="card-body">
                               <h2>{item.name}</h2>
                               <h4 >Species: {item.species}</h4>
                               <h4 >Status: {item.status}</h4>
+                              <h4 >Origin: {item.origin.name}</h4>
+                              <h4 >Location: {item.location.name}</h4>
                             </div>
                          </div>
                          </div>

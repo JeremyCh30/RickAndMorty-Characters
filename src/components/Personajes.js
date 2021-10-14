@@ -11,6 +11,9 @@ const Personajes = () => {
   const[personaje, setPersonaje] = useState([]);
   //State de información
   const[info, setInfo] = useState({});
+  
+
+
   //Link del api de Rick & Morty
   const  url = "https://rickandmortyapi.com/api/character";
 
@@ -26,6 +29,7 @@ const Personajes = () => {
       console.log(error);
     });
   };
+  
   //Función para el cambio de página
   //avanzar
   const nextPage = () => {
@@ -48,7 +52,7 @@ const Personajes = () => {
             <Link to={'/'} className="button margen-arriba input">
                 Ir a la Página Principal
             </Link>
-        
+
             <CardsPersonajes personaje={personaje} />
     
             <div className="container pb-5">
